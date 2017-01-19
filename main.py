@@ -15,24 +15,17 @@ class Index(webapp2.RequestHandler):
         # choose a movie by invoking our new function
         movie = self.getRandomMovie()
 		
-		
         # build the response string
         content = "<h1>Movie of the Day</h1>"
         content += "<p>" + movie + "</p>"
-			
-        # TODO: pick a different random movie, and display it under
-        # the heading "<h1>Tommorrow's Movie</h1>"
-      
         self.response.write(content)
 		
-		# choose a movie by invoking our new function
+		# TODO: pick a different random movie, and display it under
         movietwo = self.getRandomMovie()
-		
 		
         # build the response string
         contenttwo = "<h1>Tomorrow's Movie</h1>"
         contenttwo += "<p>" + movietwo + "</p>"
-		
         self.response.write(contenttwo)
 
 app = webapp2.WSGIApplication([
