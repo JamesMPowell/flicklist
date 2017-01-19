@@ -6,7 +6,7 @@ class Index(webapp2.RequestHandler):
     def getRandomMovie(self):
 
         # TODO: make a list with at least 5 movie titles
-		movies = ['The Matrix','Lethal Weapon','DeadPool','Hell or High Water','Jurassic Park']
+		movies = ['The Matrix','Lethal Weapon','DeadPool','Hell or High Water','Jurassic Park','Forest Gump','The GodFather']
 		
         # TODO: randomly choose one of the movies, and return it
 		return(random.choice(movies))
