@@ -22,6 +22,8 @@ class Index(webapp2.RequestHandler):
 		
 		# TODO: pick a different random movie, and display it under
         movietwo = self.getRandomMovie()
+        if movietwo == movie:
+            movietwo = self.getRandomMovie()
 		
         # build the response string
         contenttwo = "<h1>Tomorrow's Movie</h1>"
